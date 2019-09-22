@@ -20,13 +20,13 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">主页</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">关于</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">博客</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">故事</a>
                   </li>
                 </ul>
               </div>
@@ -38,7 +38,7 @@
         <div class="container">
 <div class="row pp-section">
   <div class="col-md-9">
-    <h1 class="h4">Contact Us</h1>
+    <h1 class="h4">联系我</h1>
     <p>Message us with any questions or inquiries. We would be happy to answer your question. </p>
   </div>
 </div>
@@ -56,40 +56,28 @@
       <p>Contact Support</p>
       <p>Our technical support is available by phone or email from 11am to 7pm Monday through Friday.</p>
       <p class="pt-5"><b>General Inquiries</b></p>
-      <p>1203931305@qq.com</p>
+      <p>info@example.com</p>
     </div>
     <div class="col-md-7 col-sm-12">
       <div class="pp-contact-message">
         <div class="h4 mb-3">Drop a Message</div>
-        <form action="1203931305@qq.com" method="POST">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 mb-3">
-              <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name"/>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-3">
-              <input class="form-control" type="text" name="last-name" placeholder="*Last Name"/>
-            </div>
+        <form role="form" action="https://sc.ftqq.com/SCU56817Tc0a36c7168ad26384c5d1f933673a62d5d46f8b5772da.send" method="post" id="send_form" class="well" onsubmit="send_form_in('send_form');return false;">
+          <h4>勾搭我😘</h4>
+          <div class="form-group">
+            <label for="text">消息标题</label>
+            <input type="text" class="form-control" id="text" name="text" placeholder="必填，最长265字节" value="">
           </div>
-          <div class="row mb-3">
-            <div class="col">
-              <input class="form-control" type="text" name="Subject" placeholder="*Subject"/>
-            </div>
+          <div class="form-group">
+            <label for="desp">消息内容</label>
+            <div><textarea class="form-control" row="3" placeholder="消息内容，最长64K，选填，支持MarkDown" name="desp"></textarea></div>
           </div>
-          <div class="row mb-3">
-            <div class="col">
-              <input class="form-control" type="email" name="_replyto" placeholder="*E-mail"/>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <textarea class="form-control" type="text" name="message" placeholder="*Your Message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button class="btn btn-primary" type="submit">Send</button>
-            </div>
-          </div>
+          <div class="form_notice" id="form_send_form_notice"><span class="label label-default lable-form">消息标题不能为空</span></div>
+          
+        
+         <div class="form_notice" id="form_send_form_notice">
+            <button type="submit" class="btn btn-primary" >发送消息</button>
+           
+            
         </form>
       </div>
     </div>
